@@ -4,7 +4,7 @@ class Mysql2QueryFilter::QueryFilter
   end
 
   def plugin(name, options = {})
-    filter_class = Mysql2QueryFilter::Plugins[name]
+    filter_class = Mysql2QueryFilter::Plugin.get(name)
     add(filter_class, options)
   end
 
