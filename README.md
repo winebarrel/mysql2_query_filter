@@ -47,7 +47,7 @@ see [mysql2_query_filter-plugin-log](https://github.com/winebarrel/mysql2_query_
 require 'mysql2_query_filter'
 
 Mysql2QueryFilter.configure do |filter|
-  filter.plugin :log
+  filter.plugin :log  #, out: $stderr
 end
 
 Mysql2QueryFilter.enable
