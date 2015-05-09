@@ -31,7 +31,7 @@ class MyFilter < Mysql2QueryFilter::Plugin::Filter
 end
 
 Mysql2QueryFilter.configure do |filter|
-  filter.append MyFilter
+  filter.add MyFilter
 end
 
 Mysql2QueryFilter.enable

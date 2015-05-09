@@ -8,7 +8,7 @@ class Mysql2QueryFilter::QueryFilter
     append(filter_class, options)
   end
 
-  def append(filter_class, options = {})
+  def add(filter_class, options = {})
     unless filter_class < Mysql2QueryFilter::Plugin::Filter
       raise "Invalid plug-in has been appended: #{filter_class}"
     end
