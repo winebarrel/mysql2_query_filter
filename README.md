@@ -1,6 +1,6 @@
 # Mysql2QueryFilter
 
-Filtering framework for Mysql2.
+Filtering framework for [Mysql2](https://github.com/brianmario/mysql2).
 
 ## Installation
 
