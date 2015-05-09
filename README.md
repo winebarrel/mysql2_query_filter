@@ -24,8 +24,9 @@ Or install it yourself as:
 require 'mysql2_query_filter'
 
 class MyFilter < Mysql2QueryFilter::Plugin::Filter
-  def filter(sql)
+  def filter(sql, query_options)
     p sql
+    p query_options
   end
 end
 

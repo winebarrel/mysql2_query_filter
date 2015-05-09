@@ -16,9 +16,9 @@ class Mysql2QueryFilter::QueryFilter
     @filters << filter_class.new(options)
   end
 
-  def filter(sql)
+  def filter(sql, query_options)
     @filters.each do |fltr|
-      fltr.filter(sql)
+      fltr.filter(sql, query_options)
     end
   end
 end

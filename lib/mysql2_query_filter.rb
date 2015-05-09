@@ -20,8 +20,8 @@ module Mysql2QueryFilter
     yield(@@query_filter)
   end
 
-  def self.filter(sql)
-    @@query_filter.filter(sql) if @@enabled
+  def self.filter(sql, query_options)
+    @@query_filter.filter(sql, query_options) if @@enabled
   end
 
   def self.enable

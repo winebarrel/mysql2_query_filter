@@ -3,6 +3,6 @@ class Mysql2QueryFilter::Plugin::Filter
     @options = options.dup
   end
 
-  def filter(sql)
+  def filter(sql, query_options)
   end
 end
