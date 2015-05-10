@@ -23,11 +23,11 @@ module Mysql2QueryFilter
     @@query_filter.filter(sql, query_options) if @@enabled
   end
 
-  def self.enable
+  def self.enable!
     @@enabled = true
   end
 
-  def self.disable
+  def self.disable!
     @@enabled = false
   end
 end

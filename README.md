@@ -34,7 +34,7 @@ Mysql2QueryFilter.configure do |filter|
   filter.add MyFilter
 end
 
-Mysql2QueryFilter.enable
+Mysql2QueryFilter.enable!
 
 client = Mysql2::Client.new(host: 'localhost', username: 'root')
 client.query('show databases')
@@ -51,7 +51,7 @@ Mysql2QueryFilter.configure do |filter|
   filter.plugin :log #, out: $stderr
 end
 
-Mysql2QueryFilter.enable
+Mysql2QueryFilter.enable!
 
 client = Mysql2::Client.new(host: 'localhost', username: 'root')
 client.query('show databases')
