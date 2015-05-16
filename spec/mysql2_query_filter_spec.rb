@@ -30,7 +30,7 @@ describe Mysql2QueryFilter do
   context 'when using a plug-in' do
     before do
       Mysql2QueryFilter.configure do |filter|
-        filter.plugin :test
+        filter.plugin :test_plugin
       end
     end
 
