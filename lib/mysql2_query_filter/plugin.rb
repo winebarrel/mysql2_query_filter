@@ -13,6 +13,7 @@ module Mysql2QueryFilter::Plugin
 
   def self.get(name)
     name = name.to_s
+    p $:
 
     require "mysql2_query_filter/plugin/#{name}"
 
