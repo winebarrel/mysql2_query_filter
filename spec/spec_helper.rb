@@ -1,6 +1,6 @@
 $: << File.expand_path('..', __FILE__)
 
-pp $:
+p $:
 
 require 'mysql2_query_filter'
 
