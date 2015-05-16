@@ -2,6 +2,9 @@
 
 Filtering framework for [Mysql2](https://github.com/brianmario/mysql2).
 
+[![Gem Version](https://badge.fury.io/rb/mysql2_query_filter.svg)](http://badge.fury.io/rb/mysql2_query_filter)
+[![Build Status](https://travis-ci.org/winebarrel/mysql2_query_filter.svg?branch=master)](https://travis-ci.org/winebarrel/mysql2_query_filter)
+
 ## Installation
 
 Add this line to your application's Gemfile:
