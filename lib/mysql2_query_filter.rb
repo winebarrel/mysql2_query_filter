@@ -2,9 +2,9 @@ require 'mysql2'
 
 require 'mysql2_query_filter/version'
 
+require 'mysql2_query_filter/base'
 require 'mysql2_query_filter/mysql2_client_ext'
 require 'mysql2_query_filter/plugin'
-require 'mysql2_query_filter/plugin/filter'
 require 'mysql2_query_filter/query_filter'
 
 Mysql2::Client.class_eval do
@@ -29,5 +29,13 @@ module Mysql2QueryFilter
 
   def self.disable!
     @@enabled = false
+  end
+
+  def self.disable!
+    @@enabled = false
+  end
+
+  def self.clear!
+    @@query_filter.clear!
   end
 end

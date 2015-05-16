@@ -1,4 +1,4 @@
-class Mysql2QueryFilter::Plugin::Filter
+class Mysql2QueryFilter::Base
   def initialize(options)
     @options = options.dup
   end

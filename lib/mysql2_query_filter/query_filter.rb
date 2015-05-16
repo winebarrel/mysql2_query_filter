@@ -9,7 +9,7 @@ class Mysql2QueryFilter::QueryFilter
   end
 
   def add(filter_class, options = {})
-    unless filter_class < Mysql2QueryFilter::Plugin::Filter
+    unless filter_class < Mysql2QueryFilter::Base
       raise "Invalid plug-in has been appended: #{filter_class}"
     end
 
@@ -20,5 +20,9 @@ class Mysql2QueryFilter::QueryFilter
     @filters.each do |fltr|
       fltr.filter(sql, query_options)
     end
+  end
+
+  def clear!
+    @filters.clear
   end
 end

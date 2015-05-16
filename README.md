@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
 require 'mysql2_query_filter'
 
-class MyFilter < Mysql2QueryFilter::Plugin::Filter
+class MyFilter < Mysql2QueryFilter::Base
   def filter(sql, query_options)
     p sql
     p query_options
