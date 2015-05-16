@@ -27,9 +27,9 @@ Or install it yourself as:
 require 'mysql2_query_filter'
 
 class MyFilter < Mysql2QueryFilter::Base
-  def filter(sql, query_options)
+  def filter(sql, client)
     p sql
-    p query_options
+    p client
   end
 end
 

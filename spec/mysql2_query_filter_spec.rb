@@ -4,13 +4,13 @@ describe Mysql2QueryFilter do
   context 'when using filters' do
     let(:filter1) do
       Class.new(Mysql2QueryFilter::Base) do
-        def filter(sql, query_options); sql << ' through filter1'; end
+        def filter(sql, client); sql << ' through filter1'; end
       end
     end
 
     let(:filter2) do
       Class.new(Mysql2QueryFilter::Base) do
-        def filter(sql, query_options); sql << ' through filter2'; end
+        def filter(sql, client); sql << ' through filter2'; end
       end
     end
 
